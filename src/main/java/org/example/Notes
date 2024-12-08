@@ -1,0 +1,16 @@
+    we did mapper in last class, i was reading through if there are some specific mapping
+    lets say there is a page i am showing data of user, product, category
+    option1:for that i will build 3 apis's and hit 3 apis's and merge them on the UI and show them
+    OPtion2: build 1 api which gives you all 3 data in 1 short. the response dto  you will
+    build for API which combines all 3 data it gives to you in 1 short that dto will take
+    data from category, product and user those kind of mapping where you are merging or playing
+    with the data doing something with data not the copy to copy conversion ...when you have logical information
+     requirement needed then you write those method in seperate mapper class
+    when there is plain conversion e.g. user entity to user response dto those method
+    instead of writing in mapper class you write them inside the same entity class--its easier to debug
+    coz they dont have any logic
+
+    who assign admin role and how admin sign up---
+    to create the admin we have abit tricky url, so you dont know where the url is. url is complex
+     i can keep security key to create the new admin user..internal information that is not given to everybody
+
