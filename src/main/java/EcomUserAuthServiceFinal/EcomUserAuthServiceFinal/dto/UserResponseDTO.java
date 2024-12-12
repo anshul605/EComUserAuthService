@@ -15,6 +15,8 @@ public class UserResponseDTO {
     private String email;
     private List<RoleResponseDTO> roles;
     //what about token token will not be pass in the dto--token will go as part of header
+    private String token;
+
 
     public static UserResponseDTO from(User user){
         if(user == null)
@@ -23,7 +25,8 @@ public class UserResponseDTO {
         //here we will not set as we are in the same entity
         userResponseDTO.name = user.getName();
         userResponseDTO.email = user.getEmailId();
-        //userResponseDTO.token = user.getToken();
+        //latter we add the below line to sve the token in db and send it in response as well
+        userResponseDTO.token = user.getToken();
         userResponseDTO.roles = new ArrayList<>();
         //convert it to lambda stream
         for(Role role : user.getRoles()){

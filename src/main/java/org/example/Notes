@@ -14,3 +14,27 @@
     to create the admin we have abit tricky url, so you dont know where the url is. url is complex
      i can keep security key to create the new admin user..internal information that is not given to everybody
 
+./gradlew build -xTest---when you build it build all class and test class
+comand for gradele (code was failing in test)
+
+
+-------------------
+1. Headers
+2. Sessions
+3. Full implementation with security
+
+Pending -
+1. Integration using RestTemplate
+ProductService with UserService - 30 mins
+
+Stretch Goal -
+1. Google OAuth2 signin integration
+
+
+
+ToDo
+1. Integrate header in some APIs of ProductService
+2. Pass the token that we got after logging in User Service
+3. Create UserService client, similar to fakeStoreClient
+4. In service layer before executing any method, validate the token then process
+

@@ -14,8 +14,10 @@ public class User extends BaseModel {
     private String name;
     private String emailId;
     private String password; // wont store actual password
-    private String token; // temporary solution
+    private String token; // temporary solution, for a time being
 
     @ManyToMany
     private List<Role> roles;
+
+
 }
